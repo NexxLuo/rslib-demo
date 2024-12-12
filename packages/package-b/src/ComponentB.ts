@@ -1,8 +1,6 @@
 
 import { ComponentA } from "PackageA"
 
-
-
 type PropsType = {
     a: string;
     b: number;
