@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+      "jsx": "preserve",
+      "module": "commonjs",
+      "target": "es5",
+      "allowJs": false,
+      "noUnusedLocals": false,
+      "preserveConstEnums": true,
+      "skipLibCheck": true,
+      "sourceMap": true,
+      "inlineSources": true,
+      "declaration": true,
+      "experimentalDecorators": true,
+      "downlevelIteration": true,
+      "noImplicitThis": true,
+      "baseUrl": ".",
+      "paths": {
+        "PackageA": ["./packages/package-a/src"],
+        "PackageA/lib/*": ["./packages/package-a/src/*"],
+        "PackageB": ["./packages/package-b/src"],
+        "PackageB/lib/*": ["./packages/package-b/src/*"],
+      }
+    }
+  }
+  
