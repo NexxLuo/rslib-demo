@@ -8,6 +8,6 @@
     "build": "rslib build"
   },
   "devDependencies": {
-   
+   "vue":"2.7.16"
   }
 }

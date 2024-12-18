@@ -1,0 +1,8 @@
+
+@use './var.scss';
+@import './var.scss';
+
+
+.#{$form-item-prefix} {
+  display: flex;
+}

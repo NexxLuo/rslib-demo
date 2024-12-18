@@ -29,13 +29,19 @@ var __webpack_require__ = {};
     };
 })();
 /************************************************************************/ var __webpack_exports__ = {};
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
+// EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-    ComponentA: function() {
-        return ComponentA;
+    ComponentA: ()=>/* binding */ ComponentA
+});
+const external_vue_namespaceObject = require("vue");
+const ComponentA = (0, external_vue_namespaceObject.defineComponent)({
+    render (h) {
+        let props = this.$props;
+        return 1 === props.b ? /*#__PURE__*/ React.createElement("div", null, "12") : /*#__PURE__*/ React.createElement("div", null, "34");
     }
 });
-const ComponentA = (props)=>1 === props.b ? "ComponentA" : "component-a";
 var __webpack_export_target__ = exports;
 for(var __webpack_i__ in __webpack_exports__)__webpack_export_target__[__webpack_i__] = __webpack_exports__[__webpack_i__];
 if (__webpack_exports__.__esModule) Object.defineProperty(__webpack_export_target__, '__esModule', {

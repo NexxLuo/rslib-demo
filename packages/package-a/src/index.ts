@@ -1,1 +1,2 @@
-export * from "./ComponentA"
+import "./styles";
+export * from "./ComponentA";

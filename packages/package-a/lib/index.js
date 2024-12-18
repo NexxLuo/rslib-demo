@@ -2,6 +2,9 @@
 var __webpack_modules__ = {
     "./ComponentA": function(module) {
         module.exports = require("./ComponentA.js");
+    },
+    "./styles": function(module) {
+        module.exports = require("./styles.js");
     }
 };
 /************************************************************************/ // The module cache
@@ -64,10 +67,11 @@ function __webpack_require__(moduleId) {
 })();
 /************************************************************************/ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
-/* ESM import */ var _ComponentA__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./ComponentA");
+__webpack_require__("./styles");
+/* ESM import */ var _ComponentA__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./ComponentA");
 /* ESM reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
-/* ESM reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _ComponentA__WEBPACK_IMPORTED_MODULE_0__)if ("default" !== __WEBPACK_IMPORT_KEY__) __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = (function(key) {
-    return _ComponentA__WEBPACK_IMPORTED_MODULE_0__[key];
+/* ESM reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _ComponentA__WEBPACK_IMPORTED_MODULE_1__)if ("default" !== __WEBPACK_IMPORT_KEY__) __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = (function(key) {
+    return _ComponentA__WEBPACK_IMPORTED_MODULE_1__[key];
 }).bind(0, __WEBPACK_IMPORT_KEY__);
 /* ESM reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
 var __webpack_export_target__ = exports;

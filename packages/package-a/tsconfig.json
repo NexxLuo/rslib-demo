@@ -1,6 +1,7 @@
 {
     "extends": "../../tsconfig.json",
     "compilerOptions": {
+      "jsxFactory": "h",
       "rootDir": "src",
       "isolatedModules":true,
       "declaration": true
