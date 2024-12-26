@@ -1,16 +1,13 @@
 {
-  "name": "package-a",
+  "name": "package-c",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/NexxLuo/rslib-demo.git",
   "license": "MIT",
   "scripts": {
-    "build": "rslib build"
+   "build": "rslib build"
   },
   "devDependencies": {
-    "vue": "2.7.16"
-  },
-  "dependencies": {
-    "dayjs": "^1.11.13"
+    "element-ui": "^2.14.0"
   }
 }

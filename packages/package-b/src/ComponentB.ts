@@ -1,5 +1,6 @@
 
 import { ComponentA } from "PackageA"
+import dayjs from "dayjs"
 
 type PropsType = {
     a: string;
@@ -7,5 +8,5 @@ type PropsType = {
 }
 
 export const ComponentB = (props: PropsType) => {
-    return props.b === 1 ? ComponentA({a:"test",b:props.b}) : "component-b"
+    return props.b === 1 ? ComponentA({a:"test",b:props.b}) : dayjs()
 }

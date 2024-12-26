@@ -1,7 +1,18 @@
 "use strict";
-// The require scope
 var __webpack_require__ = {};
-/************************************************************************/ // webpack/runtime/define_property_getters
+(()=>{
+    __webpack_require__.n = function(module) {
+        var getter = module && module.__esModule ? function() {
+            return module['default'];
+        } : function() {
+            return module;
+        };
+        __webpack_require__.d(getter, {
+            a: getter
+        });
+        return getter;
+    };
+})();
 (()=>{
     __webpack_require__.d = function(exports1, definition) {
         for(var key in definition)if (__webpack_require__.o(definition, key) && !__webpack_require__.o(exports1, key)) Object.defineProperty(exports1, key, {
@@ -10,15 +21,12 @@ var __webpack_require__ = {};
         });
     };
 })();
-// webpack/runtime/has_own_property
 (()=>{
     __webpack_require__.o = function(obj, prop) {
         return Object.prototype.hasOwnProperty.call(obj, prop);
     };
 })();
-// webpack/runtime/make_namespace_object
 (()=>{
-    // define __esModule on exports
     __webpack_require__.r = function(exports1) {
         if ('undefined' != typeof Symbol && Symbol.toStringTag) Object.defineProperty(exports1, Symbol.toStringTag, {
             value: 'Module'
@@ -28,18 +36,18 @@ var __webpack_require__ = {};
         });
     };
 })();
-/************************************************************************/ var __webpack_exports__ = {};
-// ESM COMPAT FLAG
+var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
-// EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-    ComponentA: ()=>/* binding */ ComponentA
+    ComponentA: ()=>ComponentA
 });
-const external_vue_namespaceObject = require("vue");
-const ComponentA = (0, external_vue_namespaceObject.defineComponent)({
+const vue_runtime_esm_js_namespaceObject = require("../../../node_modules/vue/dist/vue.runtime.esm.js");
+const dayjs_min_js_namespaceObject = require("../../../node_modules/dayjs/dayjs.min.js");
+var dayjs_min_js_default = /*#__PURE__*/ __webpack_require__.n(dayjs_min_js_namespaceObject);
+const ComponentA = (0, vue_runtime_esm_js_namespaceObject.defineComponent)({
     render (h) {
         let props = this.$props;
-        return 1 === props.b ? /*#__PURE__*/ React.createElement("div", null, "12") : /*#__PURE__*/ React.createElement("div", null, "34");
+        return 1 === props.b ? /*#__PURE__*/ React.createElement("div", null, dayjs_min_js_default()()) : /*#__PURE__*/ React.createElement("div", null, "34");
     }
 });
 var __webpack_export_target__ = exports;

@@ -4,7 +4,13 @@ import { pluginVue2 } from "@rsbuild/plugin-vue2";
 import { pluginVue2Jsx } from "@rsbuild/plugin-vue2-jsx";
 
 export default defineConfig({
-  plugins: [pluginSass(),pluginVue2(),pluginVue2Jsx()],
+  source: {
+    assetsInclude: /\.scss$/,
+  },
+  plugins: [pluginSass({
+    exclude: /.scss/,
+  }),pluginVue2(),pluginVue2Jsx()],
+  
   lib: [
     {
       source: {
